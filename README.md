@@ -10,15 +10,9 @@ The EPSS MCP Project is a powerful server designed to retrieve CVE details from 
 - **Docker Support**: Easily deploy the server using Docker for a consistent and portable runtime environment.
 - **VS Code Compatibility**: Integrate with VS Code MCP for enhanced developer workflows and real-time vulnerability insights.
 
-## Screenshot
-
-Below is a screenshot of the bot in action:
-
-![EPSS MCP Screenshot](epss_mcp.png)
-
 ## Prerequisites
 
-- Python 3.10 or higher
+- Python 3.13 or higher
 - Docker (optional, for containerized deployment)
 - An NVD API key (add it to the `.env` file as `NVD_API_KEY`)
 
@@ -91,6 +85,20 @@ docker run -p 8000:8000 epss_mcp
 
 The MCP server will now be accessible at `http://localhost:8000`.
 
+### WebUI Screenshot
+
+Below is a screenshot of the MCP server running in the Open-WebUI:
+
+![EPSS MCP WebUI Screenshot](epss_mcp_webui.png)
+
+### Suggested System Prompt for WebUI
+
+When using the MCP server in Open-WebUI, you can configure the following system prompt to guide interactions:
+
+```text
+You are a specialized AI Assistant focused on the Exploit Prediction Scoring System (EPSS). Your expertise lies in delivering and interpreting EPSS data, which includes daily updated probability scores (0-1) and percentiles for Common Vulnerabilities and Exposures (CVEs), indicating the likelihood of their exploitation in the wild within the next 30 days. You are to help cybersecurity professionals understand these predictions, compare them with other metrics like CVSS scores, and use this information to prioritize vulnerability remediation efforts effectively. Provide actionable, data-driven insights in a clear, technically accurate, professional, and solution-oriented manner.
+```
+
 ## Serving to VS Code MCP
 
 To serve the MCP server to VS Code MCP, follow these steps:
@@ -119,6 +127,12 @@ To serve the MCP server to VS Code MCP, follow these steps:
 
 3. **Start Using the MCP Server**:
    Once connected, VS Code will call the Python file directly to fetch CVE details and EPSS scores.
+
+### VS Code Screenshot
+
+Below is a screenshot of the MCP server integrated with VS Code:
+
+![EPSS MCP VS Code Screenshot](epss_mcp_vscode.png)
 
 ## Project Structure
 
