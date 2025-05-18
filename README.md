@@ -1,4 +1,5 @@
 # EPSS MCP Project
+[![smithery badge](https://smithery.ai/badge/@jgamblin/EPSS-MCP)](https://smithery.ai/server/@jgamblin/EPSS-MCP)
 
 The EPSS MCP Project is a powerful server designed to retrieve CVE details from the NVD API and fetch EPSS scores from the EPSS server. It provides users with comprehensive vulnerability information, including CVE descriptions, CWEs, CVSS scores, and EPSS percentiles, all in one place.
 
@@ -42,6 +43,14 @@ NVD_API_KEY=your-nvd-api-key
 ```
 
 ## Usage
+
+### Installing via Smithery
+
+To install EPSS Vulnerability Scoring Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@jgamblin/EPSS-MCP):
+
+```bash
+npx -y @smithery/cli install @jgamblin/EPSS-MCP --client claude
+```
 
 ### Running the MCP Server Locally
 
