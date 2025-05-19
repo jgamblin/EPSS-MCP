@@ -1,5 +1,5 @@
 # EPSS MCP Project
-[![smithery badge](https://smithery.ai/badge/@jgamblin/EPSS-MCP)](https://smithery.ai/server/@jgamblin/EPSS-MCP)
+
 
 The EPSS MCP Project is a powerful server designed to retrieve CVE details from the NVD API and fetch EPSS scores from the EPSS server. It provides users with comprehensive vulnerability information, including CVE descriptions, CWEs, CVSS scores, and EPSS percentiles, all in one place.
 
@@ -164,3 +164,5 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+[![smithery badge](https://smithery.ai/badge/@jgamblin/EPSS-MCP)](https://smithery.ai/server/@jgamblin/EPSS-MCP)
